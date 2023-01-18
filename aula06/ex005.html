@@ -15,15 +15,40 @@
 </head>
 <body>
     <h1>Iniciando estudos com o DOM</h1>
-    <p>Aqui vai o resultado </p>
+    <p>Aqui vai o resultado do teste </p>
     <p>Aprendendo a usar o <strong>DOM</strong> no java script</p>
 
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     
 
     <script>
 
-        window.document.write(window.document.URL)
+        
+       var p1=window.document.getElementsByTagName('p')[1]
+       
+
+       /*
+       var d=document.getElementById('msg')
+       d.style.background = 'green'
+       d.innerText='aguardando...'
+        */
+
+        /*
+        var d =window.document.getElementsByName('msg')[0]
+        d.innerText='olá,estou testando o DOM'
+        d.style.background='green'
+        */
+
+        /*
+        var d=window.document.getElementsByClassName('msg')[0]
+        d.innerText= 'óla, estou testando o DOM'
+        d.style.background = 'red'
+        */
+
+
+        var d = window.document.querySelector('div#msg')
+        d.innerText= 'olá, testando o DOM'
+        d.style.color='orange'
 
     </script>
 

@@ -9,7 +9,7 @@
 <body>
 
     <h1>Nacionalidades</h1>
-    Vivendo em <input type="text" name="txtnas" id="txtnas"> você é  
+    Vivendo em <input type="text" name="txnas" id="txtnas"> você é  
     <input type="button" value="analisar" onclick="verificar()">
     <div id="res">
 
@@ -21,13 +21,18 @@
         
         var naci= window.document.querySelector('id#txtnas')
         var res=  window.document.getElementById('res')
-        var resp =  (txtnas.value)
+        var resp = (txtnas.value)
             res.innerHTML= `<p>você é do/a <strong>${resp}</strong></p>`
-         if(resp != brasil ){
+         if(resp = brasil ){
                 console.log(` você é brasileiro!`)
+            }else {
+                console.log(`vc não é brasileiro`)
             }
+            
         }
       
+            
+
     </script>
     
 </body>

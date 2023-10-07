@@ -1,7 +1,7 @@
 var agora= new Date()
 var diaSem= agora.getDay()
 
-diaSem=7
+diaSem=2
 /*
     domingo = 0
     segunda = 1
